@@ -1,6 +1,10 @@
+import {DownloadButton} from "./components/DownloadButton/DownloadButton";
+
 function App() {
     return (
-        <div>
+        <div className="content-center">
+            <h1 className="text-5xl"> Moodle Learning Analytics </h1>
+            <DownloadButton/>
         </div>
     );
 }
