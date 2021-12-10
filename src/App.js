@@ -1,5 +1,5 @@
 import {DownloadButton} from "./components/DownloadButton/DownloadButton";
-import {Features} from "./pages/Features";
+import {Features} from "./pages/Features/Features";
 
 function App() {
     return (

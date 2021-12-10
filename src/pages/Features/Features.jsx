@@ -1,5 +1,5 @@
 import {BsFillShieldLockFill, RiLuggageCartLine, TiDeviceDesktop, VscFileCode} from "react-icons/all";
-import {FeatureCard} from "../components/FeatureCard/FeatureCard";
+import {FeatureCard} from "../../components/FeatureCard/FeatureCard";
 
 const Features = (props) => {
     const features = [
