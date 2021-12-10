@@ -6,22 +6,24 @@ const Features = (props) => {
         {
             title: "Cross-platform",
             description: "MLA works across operating systems. Use it on OS X, Windows or Linux.",
-            icon: <TiDeviceDesktop/>
+            icon: <TiDeviceDesktop size={24}/>
         },
         {
             title: "Portable",
-            description: "Use it on the go, without any installation.",
-            icon: <RiLuggageCartLine/>
+            description: "Use it on the go. No installation is required.",
+            icon: <RiLuggageCartLine size={24}/>,
+            extra: "More information"
         },
         {
             title: "Private",
-            description: "Process all the data in your local computer.",
-            icon: <BsFillShieldLockFill/>
+            description: "Process all the data in your local computer. Your data is yours and only yours.",
+            icon: <BsFillShieldLockFill size={24}/>,
+            extra: "More information"
         },
         {
             title: "File system browser",
             description: "Easily browse and open Moodle log files.",
-            icon: <VscFileCode/>
+            icon: <VscFileCode size={24}/>
         }
     ];
 
