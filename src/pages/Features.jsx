@@ -28,12 +28,14 @@ const Features = (props) => {
     ];
 
     return (
-        <section id="features" className="flex w-full h-screen">
-            {
-                features.map( (feat) => {
-                    return <FeatureCard title={feat.title} description={feat.description} icon={feat.icon}/>
-                })
-            }
+        <section id="features" className="flex w-full place-content-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:auto-rows-auto gap-10 gap-y-20">
+                {
+                    features.map( (feat, index) => {
+                        return <FeatureCard feature={feat} key={index}/>
+                    })
+                }
+            </div>
         </section>
     );
 }
