@@ -2,11 +2,13 @@
     "name": "moodle-learning-analytics",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://ls-leda.github.io/Moodle-Learning-Analytics",
     "scripts": {
         "start": "craco start",
         "build": "craco build",
         "test": "craco test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "deploy-github": "gh-pages -d build"
     },
     "dependencies": {
         "react": "^17.0.2",
@@ -18,7 +20,8 @@
         "@craco/craco": "^6.4.2",
         "autoprefixer": "^9.8.8",
         "postcss": "^7.0.39",
-        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+        "gh-pages": "^3.2.3"
     },
     "eslintConfig": {
         "extends": [
