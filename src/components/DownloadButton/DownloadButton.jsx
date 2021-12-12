@@ -6,7 +6,7 @@ const DownloadButton = () => {
     }
 
     return (
-        <button type="button" onClick={downloadMLA} className="bg-blue-300 rounded-md px-5 py-3 hover:bg-blue-400">
+        <button type="button" onClick={downloadMLA} className="bg-indigo-300 rounded-md px-5 py-3 hover:bg-indigo-400">
             <div className="flex items-center">
                 <MdFileDownload className="mr-2"/>
                 Download
