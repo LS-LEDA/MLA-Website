@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Moodle-Learning-Analytics/static/css/main.c79e9f03.chunk.css",
+    "main.js": "/Moodle-Learning-Analytics/static/js/main.0adf3d04.chunk.js",
+    "main.js.map": "/Moodle-Learning-Analytics/static/js/main.0adf3d04.chunk.js.map",
+    "runtime-main.js": "/Moodle-Learning-Analytics/static/js/runtime-main.d7c5b667.js",
+    "runtime-main.js.map": "/Moodle-Learning-Analytics/static/js/runtime-main.d7c5b667.js.map",
+    "static/js/2.9ca393c1.chunk.js": "/Moodle-Learning-Analytics/static/js/2.9ca393c1.chunk.js",
+    "static/js/2.9ca393c1.chunk.js.map": "/Moodle-Learning-Analytics/static/js/2.9ca393c1.chunk.js.map",
+    "index.html": "/Moodle-Learning-Analytics/index.html",
+    "static/css/main.c79e9f03.chunk.css.map": "/Moodle-Learning-Analytics/static/css/main.c79e9f03.chunk.css.map",
+    "static/js/2.9ca393c1.chunk.js.LICENSE.txt": "/Moodle-Learning-Analytics/static/js/2.9ca393c1.chunk.js.LICENSE.txt",
+    "static/media/mla_logo.75de0684.svg": "/Moodle-Learning-Analytics/static/media/mla_logo.75de0684.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d7c5b667.js",
+    "static/js/2.9ca393c1.chunk.js",
+    "static/css/main.c79e9f03.chunk.css",
+    "static/js/main.0adf3d04.chunk.js"
+  ]
+}
