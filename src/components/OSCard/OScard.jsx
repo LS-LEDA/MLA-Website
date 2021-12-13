@@ -10,7 +10,7 @@ const OScard = (props) => {
             <span className="flex flex-auto">
                 { props.os.name }
             </span>
-            <DownloadButton/>
+            <DownloadButton download_url={props.os.download_url}/>
         </div>
     );
 }
