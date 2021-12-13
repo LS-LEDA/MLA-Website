@@ -3,17 +3,26 @@ import {OScard} from "../../components/OSCard/OScard";
 import MLALogo from '../../assets/mla_logo.svg';
 
 const HeroBanner = (props) => {
-    const os = [
+    const MLA_RELEASES = "https://api.github.com/repos/LS-LEDA/MLA/releases";
+    const [os, setOS] = useState([
         {
             name: "Windows",
+            download_url: "",
+            icon: <BsWindows size={64}/>
+        },
+        {
+            name: "Windows Portable",
+            download_url: "",
             icon: <BsWindows size={64}/>
         },
         {
             name: "macOS",
+            download_url: "",
             icon: <BsApple size={64}/>
         },
         {
             name: "Linux",
+            download_url: "",
             icon: <SiLinux size={64}/>
         }
     ];
