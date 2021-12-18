@@ -38,7 +38,7 @@ const Features = (props) => {
     const customizations = [
         {
             title: "Plugins",
-            description: "",
+            description: "Enhance and power-up MLA with plugins. Add extra features to the application.",
             icon: <SiDatabricks size={24}/>
         },
         {
