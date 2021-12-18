@@ -1,6 +1,6 @@
 import {Features} from "./pages/Features/Features";
 import {HeroBanner} from "./pages/HeroBanner/HeroBanner";
-import {Roadmap} from "./components/Roadmap/Roadmap";
+import {Roadmap} from "./pages/Roadmap/Roadmap";
 
 function App() {
     return (

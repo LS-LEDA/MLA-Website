@@ -1,6 +1,6 @@
 import {Card} from "./Card";
 
-const Roadmap = () => {
+const Map = () => {
     const roadmap = [
         {
             message: "Windows platform release v1.0.0 .",
@@ -54,4 +54,4 @@ const Roadmap = () => {
     );
 }
 
-export { Roadmap };
+export { Map };
