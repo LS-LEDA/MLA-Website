@@ -51,10 +51,10 @@ const HeroBanner = (props) => {
     }, [os]);
 
     return (
-        <section className="flex w-full min-h-screen">
+        <section className="flex w-full min-h-screen place-items-center">
             {/* Header */}
             <div className="flex flex-col w-full h-full justify-center place-items-center gap-y-20">
-                <h1 className="flex w-auto text-6xl font-bold"> Moodle Learning Analytics </h1>
+                <h1 className="flex w-auto text-4xl md:text-6xl font-bold"> Moodle Learning Analytics </h1>
                 <img src={MLALogo} alt="MLA Logo" width={128}/>
                 {/* OS and download buttons for different platforms */}
                 <div className="flex flex-col gap-y-20 md:grid md:grid-cols-2 xl:flex xl:flex-row md:gap-x-20">
