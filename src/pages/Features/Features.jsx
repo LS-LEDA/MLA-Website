@@ -1,4 +1,12 @@
-import {BsFillShieldLockFill, RiLuggageCartLine, TiDeviceDesktop, VscFileCode} from "react-icons/all";
+import {
+    BiCustomize,
+    BsFillShieldLockFill,
+    MdDarkMode,
+    RiLuggageCartLine, RiPaintBrushFill,
+    SiDatabricks,
+    TiDeviceDesktop,
+    VscFileCode
+} from "react-icons/all";
 import {FeatureCard} from "../../components/FeatureCard/FeatureCard";
 
 const Features = (props) => {
@@ -24,6 +32,29 @@ const Features = (props) => {
             title: "File system browser",
             description: "Easily browse and open Moodle log files.",
             icon: <VscFileCode size={24}/>
+        }
+    ];
+
+    const customizations = [
+        {
+            title: "Plugins",
+            description: "",
+            icon: <SiDatabricks size={24}/>
+        },
+        {
+            title: "Dark mode",
+            description: "For night owls",
+            icon: <MdDarkMode size={24}/>
+        },
+        {
+            title: "Customizable",
+            description: "",
+            icon: <BiCustomize size={24}/>
+        },
+        {
+            title: "Themes",
+            description: "MLA ships pre-installed with UI themes in both dark and light colours. Can't find what you're looking for? Create your own.",
+            icon: <RiPaintBrushFill size={24}/>
         }
     ];
 
