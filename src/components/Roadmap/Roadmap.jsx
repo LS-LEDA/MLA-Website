@@ -1,4 +1,4 @@
-import {Card} from "../UI/Card";
+import {Card} from "./Card";
 
 const Roadmap = () => {
     const roadmap = [
