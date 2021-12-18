@@ -1,4 +1,12 @@
-import {BsFillShieldLockFill, RiLuggageCartLine, TiDeviceDesktop, VscFileCode} from "react-icons/all";
+import {
+    BiCustomize,
+    BsFillShieldLockFill,
+    MdDarkMode,
+    RiLuggageCartLine, RiPaintBrushFill,
+    SiDatabricks,
+    TiDeviceDesktop,
+    VscFileCode
+} from "react-icons/all";
 import {FeatureCard} from "../../components/FeatureCard/FeatureCard";
 
 const Features = (props) => {
@@ -27,11 +35,45 @@ const Features = (props) => {
         }
     ];
 
+    const customizations = [
+        {
+            title: "Plugins",
+            description: "Enhance and power-up MLA with plugins. Add extra features to the application.",
+            icon: <SiDatabricks size={24}/>
+        },
+        {
+            title: "Dark mode",
+            description: "For night owls. Only one click away to turn everything dark. Toggle it on or off as you prefer.",
+            icon: <MdDarkMode size={24}/>
+        },
+        {
+            title: "Customizable",
+            description: "Modify the application according to your needs.",
+            icon: <BiCustomize size={24}/>
+        },
+        {
+            title: "Themes",
+            description: "MLA ships pre-installed with UI themes in both dark and light colours. Can't find what you're looking for? Create your own.",
+            icon: <RiPaintBrushFill size={24}/>
+        }
+    ];
+
     return (
-        <section id="features" className="flex w-full place-content-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 md:auto-rows-auto gap-10 gap-y-20">
+        <section id="features" className="flex flex-col min-h-screen w-full m-auto justify-center content-center gap-y-20
+                                          px-20 md:px-32 lg:42 2xl:px-96">
+            <h1 className="flex text-3xl justify-center font-bold md:justify-start md:font-normal"> Got you covered </h1>
+            <div className="grid grid-cols-1 lg:grid-cols-2 auto-rows-auto gap-10 gap-y-20">
                 {
                     features.map( (feat, index) => {
+                        return <FeatureCard feature={feat} key={index}/>
+                    })
+                }
+            </div>
+
+            <h1 className="flex text-3xl justify-center md:justify-start"> Make it yours </h1>
+            <div className="grid grid-cols-1 lg:grid-cols-2 auto-rows-auto gap-10 gap-y-20">
+                {
+                    customizations.map( (feat, index) => {
                         return <FeatureCard feature={feat} key={index}/>
                     })
                 }
