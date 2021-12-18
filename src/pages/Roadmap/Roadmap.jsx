@@ -15,7 +15,7 @@ const Roadmap = () => {
                 </h1>
             </div>
 
-            <div className="flex w-1/2">
+            <div className="flex w-full lg:w-1/2">
                 <Map/>
             </div>
         </section>
