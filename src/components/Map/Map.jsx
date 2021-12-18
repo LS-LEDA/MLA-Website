@@ -19,7 +19,7 @@ const Map = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-indigo-200 py-6 flex flex-col justify-center sm:py-12">
+        <div className="min-h-screen w-full py-6 flex flex-col justify-center sm:py-12">
             <div className="py-3 sm:max-w-xl sm:mx-auto w-full px-2 sm:px-0">
                 <div className="relative text-gray-700 antialiased text-sm font-semibold">
                     {/* Middle vertical bar*/}
