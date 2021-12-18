@@ -43,12 +43,12 @@ const Features = (props) => {
         },
         {
             title: "Dark mode",
-            description: "For night owls",
+            description: "For night owls. Only one click away to turn everything dark. Toggle it on or off as you prefer.",
             icon: <MdDarkMode size={24}/>
         },
         {
             title: "Customizable",
-            description: "",
+            description: "Modify the application according to your needs.",
             icon: <BiCustomize size={24}/>
         },
         {
