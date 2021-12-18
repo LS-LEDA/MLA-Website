@@ -60,7 +60,7 @@ const Features = (props) => {
 
     return (
         <section id="features" className="flex flex-col min-h-screen w-full m-auto justify-center content-center gap-y-20
-                                          px-20 md:px-32 lg:42 2xl:px-96">
+                                          p-20 md:px-32 lg:42 2xl:px-96">
             <h1 className="flex text-3xl justify-center font-bold md:justify-start md:font-normal"> Got you covered </h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 auto-rows-auto gap-10 gap-y-20">
                 {
@@ -70,7 +70,7 @@ const Features = (props) => {
                 }
             </div>
 
-            <h1 className="flex text-3xl justify-center md:justify-start"> Make it yours </h1>
+            <h1 className="flex text-3xl justify-center font-bold md:justify-start md:font-normal"> Make it yours </h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 auto-rows-auto gap-10 gap-y-20">
                 {
                     customizations.map( (feat, index) => {
