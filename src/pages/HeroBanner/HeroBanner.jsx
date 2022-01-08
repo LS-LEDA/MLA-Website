@@ -57,7 +57,7 @@ const HeroBanner = (props) => {
             // Update the array of OS
             setOS(updated_os);
         })
-    }, [os]);
+    }, []);
 
     return (
         <section className="flex w-full min-h-screen place-items-center">
