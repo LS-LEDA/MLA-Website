@@ -51,7 +51,10 @@ const HeroBanner = (props) => {
                 // Mac dmg
                 if ( asset.name.includes('dmg') )
                     updated_os[2].download_url = asset.browser_download_url;
-                }
+                // Linux deb
+                // TODO: Other linux distros
+                if ( asset.name.includes('deb') )
+                    updated_os[3].download_url = asset.browser_download_url;
             })
 
             // Update the array of OS
