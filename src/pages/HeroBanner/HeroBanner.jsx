@@ -37,7 +37,10 @@ const HeroBanner = (props) => {
 
             release_assets.forEach( asset => {
                 // Windows exe
-                if ( asset.content_type === 'application/octet-stream' && asset.name.includes('Setup') )
+                if (
+                    ( asset.content_type === 'application/x-msdownload' && asset.name.includes('Setup') )
+                    || ( asset.name.includes('exe') && asset.name.includes('Setup') )
+                )
                     updated_os[0].download_url = asset.browser_download_url;
                 // Windows portable
                 if ( asset.content_type === 'application/octet-stream' && !asset.name.includes('Setup'))
