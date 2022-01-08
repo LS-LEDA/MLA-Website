@@ -43,7 +43,10 @@ const HeroBanner = (props) => {
                 )
                     updated_os[0].download_url = asset.browser_download_url;
                 // Windows portable
-                if ( asset.content_type === 'application/octet-stream' && !asset.name.includes('Setup'))
+                if (
+                    ( asset.content_type === 'application/x-msdownload' && !asset.name.includes('Setup') )
+                    || ( asset.name.includes('exe') && !asset.name.includes('Setup') )
+                )
                     updated_os[1].download_url = asset.browser_download_url;
                 // TODO: macOS & Linux
                 if ( asset.content_type === 'application/octet-stream' && asset.name.includes('.dmg')) {
