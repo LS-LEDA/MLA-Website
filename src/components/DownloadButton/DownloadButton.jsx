@@ -1,4 +1,4 @@
-import {MdFileDownload} from "react-icons/all";
+import {MdFileDownload} from "react-icons/md";
 
 const DownloadButton = (props) => {
     return (

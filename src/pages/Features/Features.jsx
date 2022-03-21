@@ -1,13 +1,11 @@
-import {
-    BiCustomize,
-    BsFillShieldLockFill,
-    MdDarkMode,
-    RiLuggageCartLine, RiPaintBrushFill,
-    SiDatabricks,
-    TiDeviceDesktop,
-    VscFileCode
-} from "react-icons/all";
 import {FeatureCard} from "../../components/FeatureCard/FeatureCard";
+import {TiDeviceDesktop} from "react-icons/ti";
+import {RiLuggageCartLine, RiPaintBrushFill} from "react-icons/ri";
+import {BsFillShieldLockFill} from "react-icons/bs";
+import {VscFileCode} from "react-icons/vsc";
+import {SiDatabricks} from "react-icons/si";
+import {MdDarkMode} from "react-icons/md";
+import {BiCustomize} from "react-icons/bi";
 
 const Features = (props) => {
     const features = [

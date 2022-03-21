@@ -1,4 +1,5 @@
-import {BsApple, BsWindows, SiLinux} from "react-icons/all";
+import {BsApple, BsWindows} from "react-icons/bs";
+import {SiLinux} from "react-icons/si";
 import {OScard} from "../../components/OSCard/OScard";
 import MLALogo from '../../assets/mla_logo.svg';
 import {useEffect, useState} from "react";
