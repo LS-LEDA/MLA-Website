@@ -25,8 +25,8 @@ const NavBar = () => {
 
     return (
         <div className={`flex fixed top-0 w-full h-32 justify-between py-10
-                        backdrop-opacity-95 backdrop-filter backdrop-blur-lg z-50
-                        bg-white/90 dark:bg-slate-900/75
+                        backdrop-filter backdrop-blur-3xl z-50
+                        bg-white dark:bg-dark_bg opacity-[0.993]
                         text-text dark:text-dark_text
                         px-10 md:px-20 lg:px-32 xl:40 2xl:px-96
                         border-slate-200 dark:border-slate-50/10
