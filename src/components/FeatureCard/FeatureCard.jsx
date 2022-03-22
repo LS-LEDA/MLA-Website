@@ -3,7 +3,7 @@ const FeatureCard = (props) => {
         <div className="flex flex-col max-w-md h-auto">
             <div className="flex gap-x-4 items-center">
                 {/* Feature card icon */}
-                <div className="flex bg-indigo-200 rounded-md w-12 h-12 place-items-center justify-center">
+                <div className="flex bg-primary rounded-md w-12 h-12 place-items-center justify-center">
                     { props.feature.icon }
                 </div>
                 {/* Feature card title */}
