@@ -6,6 +6,7 @@ import {VscFileCode} from "react-icons/vsc";
 import {SiDatabricks} from "react-icons/si";
 import {MdDarkMode} from "react-icons/md";
 import {BiCustomize} from "react-icons/bi";
+import {useState} from "react";
 
 const Features = () => {
     const features = [
@@ -55,6 +56,9 @@ const Features = () => {
             icon: <RiPaintBrushFill size={24}/>
         }
     ];
+
+    // Feature selection
+    const [selectedFeat, selectFeat] = useState(0);
 
     return (
         <section id="features" className="flex flex-col min-h-screen w-full m-auto justify-center content-center gap-y-20
