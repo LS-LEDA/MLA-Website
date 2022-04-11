@@ -63,13 +63,21 @@ const Features = () => {
     return (
         <section id="features" className="flex flex-col min-h-screen w-full m-auto justify-center content-center gap-y-20
                                           p-20 md:px-32 lg:42 2xl:px-96 dark:bg-dark_bg">
-            <h1 className="flex text-3xl justify-center font-bold md:justify-start md:font-normal"> Got you covered </h1>
-            <div className="grid grid-cols-1 lg:grid-cols-2 auto-rows-auto gap-10 gap-y-20">
-                {
-                    features.map( (feat, index) => {
-                        return <FeatureCard feature={feat} key={index}/>
-                    })
-                }
+            <div className="flex flex-col w-full h-auto space-y-10">
+                <h1 className="flex text-3xl justify-center font-bold md:justify-start md:font-normal"> Got you covered </h1>
+                <div className="flex w-full h-full">
+                    <div className="flex flex-col w-1/2 space-y-2">
+                        {
+                            features.map( (feat, index) => {
+                                return <FeatureCard feature={feat} key={index} id={index} select={selectFeat}/>
+                            })
+                        }
+                    </div>
+                    {/* Feature Card Image */}
+                    <div className="flex w-1/2">
+                        <img src={features[selectedFeat].img} alt={features[selectedFeat].title}/>
+                    </div>
+                </div>
             </div>
 
             <h1 className="flex text-3xl justify-center font-bold md:justify-start md:font-normal"> Make it yours </h1>
