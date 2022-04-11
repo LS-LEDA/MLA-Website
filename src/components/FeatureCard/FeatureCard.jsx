@@ -1,6 +1,8 @@
 const FeatureCard = (props) => {
     return (
-        <div className="flex flex-col max-w-md h-auto">
+        <div className="flex flex-col w-full h-auto hover:bg-primary_variant p-5 rounded-lg hover:cursor-pointer"
+             onClick={() => { props.select(props.id) }}
+        >
             <div className="flex gap-x-4 items-center">
                 {/* Feature card icon */}
                 <div className="flex bg-primary rounded-md w-12 h-12 place-items-center justify-center">
