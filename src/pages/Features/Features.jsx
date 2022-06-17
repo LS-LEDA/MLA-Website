@@ -7,30 +7,38 @@ import {SiDatabricks} from "react-icons/si";
 import {MdDarkMode} from "react-icons/md";
 import {BiCustomize} from "react-icons/bi";
 import {useState} from "react";
+import CrossPlatform from "../../assets/features/cross_platform.svg";
+import Portable from "../../assets/features/portable.svg";
+import PrivateData from "../../assets/features/private_data.svg";
+import BrowseFiles from "../../assets/features/browse_files.svg";
 
 const Features = () => {
     const features = [
         {
             title: "Cross-platform",
             description: "MLA works across operating systems. Use it on OS X, Windows or Linux.",
-            icon: <TiDeviceDesktop size={24}/>
+            icon: <TiDeviceDesktop size={24}/>,
+            img: CrossPlatform
         },
         {
             title: "Portable",
             description: "Use it on the go. No installation is required.",
             icon: <RiLuggageCartLine size={24}/>,
-            extra: "More information"
+            extra: "More information",
+            img: Portable
         },
         {
             title: "Private",
             description: "Process all the data in your local computer. Your data is yours and only yours.",
             icon: <BsFillShieldLockFill size={24}/>,
-            extra: "More information"
+            extra: "More information",
+            img: PrivateData
         },
         {
             title: "File system browser",
             description: "Easily browse and open Moodle log files.",
-            icon: <VscFileCode size={24}/>
+            icon: <VscFileCode size={24}/>,
+            img: BrowseFiles
         }
     ];
 
@@ -74,7 +82,7 @@ const Features = () => {
                         }
                     </div>
                     {/* Feature Card Image */}
-                    <div className="flex w-1/2">
+                    <div className="flex w-1/2 p-5">
                         <img src={features[selectedFeat].img} alt={features[selectedFeat].title}/>
                     </div>
                 </div>
