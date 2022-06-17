@@ -70,7 +70,7 @@ const Features = () => {
 
     return (
         <section id="features" className="flex flex-col min-h-screen w-full m-auto justify-center content-center gap-y-20
-                                          p-20 md:px-32 lg:42 2xl:px-96 dark:bg-dark_bg">
+                                          p-20 md:px-32 lg:42 2xl:px-96 dark:bg-dark_bg dark:text-dark_text">
             <div className="flex flex-col w-full h-auto space-y-10">
                 <h1 className="flex text-3xl justify-center font-bold md:justify-start md:font-normal"> Got you covered </h1>
                 <div className="flex w-full h-full">
