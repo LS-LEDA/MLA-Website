@@ -77,7 +77,7 @@ const Features = () => {
                     <div className="flex flex-col w-1/2 space-y-2">
                         {
                             features.map( (feat, index) => {
-                                return <FeatureCard feature={feat} key={index} id={index} select={selectFeat}/>
+                                return <FeatureCard feature={feat} key={index} id={index} select={selectFeat} hover={true}/>
                             })
                         }
                     </div>
@@ -92,7 +92,7 @@ const Features = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 auto-rows-auto gap-10 gap-y-20">
                 {
                     customizations.map( (feat, index) => {
-                        return <FeatureCard feature={feat} key={index}/>
+                        return <FeatureCard feature={feat} key={index} hover={false}/>
                     })
                 }
             </div>

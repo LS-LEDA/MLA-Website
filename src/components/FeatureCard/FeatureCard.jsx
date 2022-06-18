@@ -1,6 +1,6 @@
 const FeatureCard = (props) => {
     return (
-        <div className="flex w-full h-auto hover:bg-primary p-5 rounded-lg hover:cursor-pointer space-x-6"
+        <div className={`flex ${props.hover ? 'hover:bg-primary hover:cursor-pointer' : ''} w-full h-auto p-5 rounded-lg space-x-6`}
              onMouseEnter={() => props.select(props.id) }
         >
             <div className="flex">
