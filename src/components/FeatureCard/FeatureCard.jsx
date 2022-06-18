@@ -1,7 +1,7 @@
 const FeatureCard = (props) => {
     return (
         <div className="flex w-full h-auto hover:bg-primary p-5 rounded-lg hover:cursor-pointer space-x-6"
-             onMouseEnter={() => { props.select(props.id) }}
+             onMouseEnter={() => props.select(props.id) }
         >
             <div className="flex">
                 {/* Feature card icon */}
