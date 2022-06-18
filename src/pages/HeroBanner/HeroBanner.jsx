@@ -78,7 +78,8 @@ const HeroBanner = (props) => {
                         }
                     </div>
                     {/* Link to other platforms download */}
-                    <a className="dark:text-dark_text mt-5" href="#">
+                    {/* TODO: Redirect to Releases page */}
+                    <a className="dark:text-dark_text mt-5 hover:underline underline-offset-4" href="https://github.com/LS-LEDA/MLA/releases">
                         Other platforms
                     </a>
                 </div>
