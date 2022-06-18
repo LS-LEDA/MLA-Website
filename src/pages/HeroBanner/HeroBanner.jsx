@@ -73,7 +73,7 @@ const HeroBanner = (props) => {
                     <div className="flex w-fit h-fit space-x-5 mt-20">
                         {
                             os.map( (system, index) => {
-                                return <IconButton text={system.name} icon={system.icon} key={index}/>
+                                return <IconButton text={system.name} icon={system.icon} link={system.download_url} download={false} key={index}/>
                             })
                         }
                     </div>
