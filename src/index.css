@@ -2,9 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #60a5fa;
+  --primary_variant: #1d4ed8;
+  --secondary: #6366f1;
+  --secondary_variant: #4338ca;
+  --bg: #ffffff;
+  --text: #000000;
+  --dark_primary: #64748b;
+  --dark_primary_variant: #334155;
+  --dark_secondary: #1e293b;
+  --dark_secondary_variant: #64748b;
+  --dark_bg: #121212;
+  --dark_text: #ffffff;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  @apply text-indigo-500;
 }
 
 /* Scrollbar style */

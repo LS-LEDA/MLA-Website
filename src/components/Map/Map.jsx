@@ -29,13 +29,13 @@ const Map = () => {
                     {
                         roadmap.map( (event, index) => {
                             return (
-                                <div className="mt-10 sm:mt-0 sm:mb-12">
+                                <div className="mt-10 sm:mt-0 sm:mb-12" key={index}>
                                     <div className="flex flex-col sm:flex-row items-center">
                                         {/* Event card */}
                                         <div className={`flex w-full mx-auto items-center
                                                         ${ index % 2 !== 0 ? "justify-start" : "justify-end"}`}>
                                             <div className={`w-full sm:w-1/2 ${index % 2 !== 0 ? "sm:pr-8" : "sm:pl-8"}`}>
-                                                <Card event={event} key={index}/>
+                                                <Card event={event}/>
                                             </div>
                                         </div>
                                         {/* Circle */}

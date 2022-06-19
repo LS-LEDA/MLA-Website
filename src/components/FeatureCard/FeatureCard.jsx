@@ -1,16 +1,19 @@
 const FeatureCard = (props) => {
     return (
-        <div className="flex flex-col max-w-md h-auto">
-            <div className="flex gap-x-4 items-center">
+        <div className={`flex ${props.hover ? 'hover:bg-primary hover:cursor-pointer' : ''} w-full h-auto p-5 rounded-lg space-x-6`}
+             onMouseEnter={() => props.select(props.id) }
+        >
+            <div className="flex">
                 {/* Feature card icon */}
-                <div className="flex bg-indigo-200 rounded-md w-12 h-12 place-items-center justify-center">
+                <div className="flex bg-primary rounded-md w-12 h-12 place-items-center justify-center">
                     { props.feature.icon }
                 </div>
-                {/* Feature card title */}
-                <div className="font-bold text-xl flex-1"> { props.feature.title } </div>
             </div>
+
             {/* Feature card content */}
-            <div className="flex flex-col pl-16">
+            <div className="flex flex-col w-full">
+                {/* Feature card title */}
+                <div className="flex font-bold text-xl"> { props.feature.title } </div>
                 <p className="max-w-full"> { props.feature.description } </p>
                 <span className="place-self-end font-bold text-sm mt-4">
                     <a href="#">
