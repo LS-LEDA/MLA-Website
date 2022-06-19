@@ -1,21 +1,19 @@
 {
   "files": {
-    "main.css": "/Moodle-Learning-Analytics/static/css/main.d15cacaf.chunk.css",
-    "main.js": "/Moodle-Learning-Analytics/static/js/main.99062e52.chunk.js",
-    "main.js.map": "/Moodle-Learning-Analytics/static/js/main.99062e52.chunk.js.map",
-    "runtime-main.js": "/Moodle-Learning-Analytics/static/js/runtime-main.d7c5b667.js",
-    "runtime-main.js.map": "/Moodle-Learning-Analytics/static/js/runtime-main.d7c5b667.js.map",
-    "static/js/2.332d3c24.chunk.js": "/Moodle-Learning-Analytics/static/js/2.332d3c24.chunk.js",
-    "static/js/2.332d3c24.chunk.js.map": "/Moodle-Learning-Analytics/static/js/2.332d3c24.chunk.js.map",
+    "main.css": "/Moodle-Learning-Analytics/static/css/main.2fb5cf27.css",
+    "main.js": "/Moodle-Learning-Analytics/static/js/main.61b063bb.js",
+    "static/media/la salle.jpg": "/Moodle-Learning-Analytics/static/media/la salle.5facd3054dde0d6a3a0a.jpg",
+    "static/media/cross_platform.svg": "/Moodle-Learning-Analytics/static/media/cross_platform.2de4b0f2486dff73c1d4c1b315848b50.svg",
+    "static/media/browse_files.svg": "/Moodle-Learning-Analytics/static/media/browse_files.0ea62b44b62a35055e379541c1b889f0.svg",
+    "static/media/mla_logo.svg": "/Moodle-Learning-Analytics/static/media/mla_logo.6da52f76708852d616dc66d4dfe7a6c9.svg",
+    "static/media/portable.svg": "/Moodle-Learning-Analytics/static/media/portable.ffd2e51d024a124c845f6581ca67c779.svg",
+    "static/media/private_data.svg": "/Moodle-Learning-Analytics/static/media/private_data.108c59fad44b6507d58b167574edb63e.svg",
     "index.html": "/Moodle-Learning-Analytics/index.html",
-    "static/css/main.d15cacaf.chunk.css.map": "/Moodle-Learning-Analytics/static/css/main.d15cacaf.chunk.css.map",
-    "static/js/2.332d3c24.chunk.js.LICENSE.txt": "/Moodle-Learning-Analytics/static/js/2.332d3c24.chunk.js.LICENSE.txt",
-    "static/media/mla_logo.75de0684.svg": "/Moodle-Learning-Analytics/static/media/mla_logo.75de0684.svg"
+    "main.2fb5cf27.css.map": "/Moodle-Learning-Analytics/static/css/main.2fb5cf27.css.map",
+    "main.61b063bb.js.map": "/Moodle-Learning-Analytics/static/js/main.61b063bb.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.d7c5b667.js",
-    "static/js/2.332d3c24.chunk.js",
-    "static/css/main.d15cacaf.chunk.css",
-    "static/js/main.99062e52.chunk.js"
+    "static/css/main.2fb5cf27.css",
+    "static/js/main.61b063bb.js"
   ]
 }
