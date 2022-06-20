@@ -86,7 +86,7 @@ const HeroBanner = (props) => {
 
                 <img className="flex w-1/2 h-fit"
                      src="https://raw.githubusercontent.com/LS-LEDA/MLA/main/resources/demo/demo_dashboard.png"
-                     alt="Logo"/>
+                     alt="Moodle Learning Analytics Dashboard"/>
             </div>
             {/* Slogan text */}
             <div className="flex h-[10vh] text-4xl dark:text-dark_text text-center">
