@@ -3,6 +3,7 @@ import {HeroBanner} from "./pages/HeroBanner/HeroBanner";
 import {Roadmap} from "./pages/Roadmap/Roadmap";
 import NavBar from "./components/NavigationBar/NavBar";
 import {useEffect} from "react";
+import {Footer} from "./components/Footer/Footer";
 
 function App() {
     // Apply dark / light theme on app mount
@@ -22,6 +23,7 @@ function App() {
             <HeroBanner/>
             <Features/>
             <Roadmap/>
+            <Footer/>
         </div>
     );
 }
