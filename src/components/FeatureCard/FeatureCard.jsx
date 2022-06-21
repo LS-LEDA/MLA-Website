@@ -17,6 +17,10 @@ const FeatureCard = (props) => {
         }
     }, [control, inView]);
 
+    const mouseEnter = () => {
+        if ( props.hover ) props.select(props.id)
+    }
+
     return (
         <motion.div
             initial="hidden"
@@ -24,7 +28,7 @@ const FeatureCard = (props) => {
             ref={ref}
             variants={FeatureCardMotion}
             className={`flex ${props.hover ? 'hover:bg-primary hover:cursor-pointer' : ''} w-full h-auto p-5 rounded-lg space-x-6`}
-            onMouseEnter={() => props.select(props.id)}
+            onMouseEnter={mouseEnter}
         >
             <div className="flex">
                 {/* Feature card icon */}

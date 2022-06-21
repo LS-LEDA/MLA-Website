@@ -92,7 +92,7 @@ const Features = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 auto-rows-auto gap-10 gap-y-20">
                 {
                     customizations.map( (feat, index) => {
-                        return <FeatureCard feature={feat} key={index} hover={false}/>
+                        return <FeatureCard feature={feat} key={index} id={index} select={null} hover={false}/>
                     })
                 }
             </div>
