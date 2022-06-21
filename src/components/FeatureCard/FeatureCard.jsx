@@ -1,7 +1,30 @@
+import { motion, useAnimation } from "framer-motion";
+import {useInView} from "react-intersection-observer";
+import {useEffect} from "react";
+
+const FeatureCardMotion = {
+    visible: {opacity: 1, transition:{ duration: 1}},
+    hidden: {opacity: 0}
+};
+
 const FeatureCard = (props) => {
+    const control = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+            control.start("visible");
+        }
+    }, [control, inView]);
+
     return (
-        <div className={`flex ${props.hover ? 'hover:bg-primary hover:cursor-pointer' : ''} w-full h-auto p-5 rounded-lg space-x-6`}
-             onMouseEnter={() => props.select(props.id) }
+        <motion.div
+            initial="hidden"
+            animate={control}
+            ref={ref}
+            variants={FeatureCardMotion}
+            className={`flex ${props.hover ? 'hover:bg-primary hover:cursor-pointer' : ''} w-full h-auto p-5 rounded-lg space-x-6`}
+            onMouseEnter={() => props.select(props.id)}
         >
             <div className="flex">
                 {/* Feature card icon */}
@@ -21,7 +44,7 @@ const FeatureCard = (props) => {
                     </a>
                 </span>
             </div>
-        </div>
+        </motion.div>
     );
 }
 
