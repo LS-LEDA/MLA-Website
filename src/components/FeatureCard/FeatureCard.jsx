@@ -3,8 +3,8 @@ import {useInView} from "react-intersection-observer";
 import {useEffect} from "react";
 
 const FeatureCardMotion = {
-    visible: {opacity: 1, transition:{ duration: 1}},
-    hidden: {opacity: 0}
+    visible: {opacity: 1, x: 0, transition:{ ease: "easeIn", duration: 0.5}},
+    hidden: {opacity: 0, x: -25}
 };
 
 const FeatureCard = (props) => {
@@ -14,6 +14,8 @@ const FeatureCard = (props) => {
     useEffect(() => {
         if (inView) {
             control.start("visible");
+        }else {
+            control.start("hidden");
         }
     }, [control, inView]);
 
