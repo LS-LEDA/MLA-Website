@@ -74,7 +74,7 @@ const Features = () => {
             <div className="flex flex-col w-full h-auto space-y-10">
                 <h1 className="flex text-3xl justify-center font-bold md:justify-start md:font-normal"> Got you covered </h1>
                 <div className="flex w-full h-full">
-                    <div className="flex flex-col w-1/2 space-y-2">
+                    <div className="flex flex-col w-full lg:w-1/2 space-y-2">
                         {
                             features.map( (feat, index) => {
                                 return <FeatureCard feature={feat} key={index} id={index} select={selectFeat} hover={true}/>
@@ -82,7 +82,7 @@ const Features = () => {
                         }
                     </div>
                     {/* Feature Card Image */}
-                    <div className="flex w-1/2 p-5">
+                    <div className="hidden lg:flex lg:w-1/2 p-5">
                         <img src={features[selectedFeat].img} alt={features[selectedFeat].title}/>
                     </div>
                 </div>
