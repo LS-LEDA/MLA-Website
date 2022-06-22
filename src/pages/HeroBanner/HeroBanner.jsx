@@ -89,7 +89,9 @@ const HeroBanner = (props) => {
                      alt="Moodle Learning Analytics Dashboard"/>
             </div>
             {/* Slogan text */}
-            <div className="flex h-[10vh] text-4xl dark:text-dark_text text-center">
+            <div className="w-full h-[20vh] text-2xl xl:text-4xl dark:text-dark_text text-center
+                            bg-blue-100 dark:bg-blue-900 rounded-md px-5 py-10 xl:bg-transparent
+                            dark:xl:bg-transparent mt-5">
                 <span className="opacity-60">
                     Analyse logs and get
                 </span>
