@@ -1,9 +1,9 @@
-import {Features} from "./pages/Features/Features";
-import {HeroBanner} from "./pages/HeroBanner/HeroBanner";
-import {Roadmap} from "./pages/Roadmap/Roadmap";
 import NavBar from "./components/NavigationBar/NavBar";
 import {useEffect} from "react";
 import {Footer} from "./components/Footer/Footer";
+import {Route, Routes} from "react-router-dom";
+import {Home} from "./pages/Home/Home";
+import {Releases} from "./pages/Releases/Releases";
 
 function App() {
     // Apply dark / light theme on app mount
@@ -20,9 +20,10 @@ function App() {
     return (
         <div className="content-center">
             <NavBar/>
-            <HeroBanner/>
-            <Features/>
-            <Roadmap/>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/releases" element={<Releases/>}/>
+            </Routes>
             <Footer/>
         </div>
     );
