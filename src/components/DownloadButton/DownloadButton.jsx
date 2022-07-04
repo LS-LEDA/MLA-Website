@@ -2,7 +2,9 @@ import {MdFileDownload} from "react-icons/md";
 
 const DownloadButton = (props) => {
     return (
-        <button type="button" className={`bg-indigo-300 rounded-md px-5 py-3 hover:bg-indigo-400 ${ props.download_url === '' ? 'cursor-not-allowed' : ''}`} >
+        <button type="button" className={`bg-primary dark:bg-dark_primary rounded-md px-5 py-3 
+                                        hover:bg-primary_variant dark:hover:bg-dark_primary_variant 
+                                        ${ props.download_url === '' ? 'cursor-not-allowed' : ''}`} >
             <div className="flex items-center">
                 <MdFileDownload className="mr-2"/>
                 {
