@@ -5,6 +5,8 @@ import {BsWindows, BsApple} from "react-icons/bs";
 import {SiLinux} from "react-icons/si";
 import IconButton from "../../components/UI/IconButton";
 import {CgNotes} from "react-icons/cg";
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 const Releases = () => {
     const MLA_RELEASES = "https://api.github.com/repos/LS-LEDA/MLA/releases";
@@ -83,7 +85,7 @@ const Releases = () => {
             <div className="flex flex-col w-full py-10 space-y-5" key={index}>
                 {/* Release version, name and notes */}
                 <div className="flex w-full justify-between">
-                    <span className="text-2xl font-semibold">
+                    <span className="flex text-2xl font-semibold items-center">
                         {props.name}
                     </span>
                     <IconButton download={false} text={"Release notes"} icon={<CgNotes/>}/>
