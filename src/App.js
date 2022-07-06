@@ -4,6 +4,8 @@ import {Footer} from "./components/Footer/Footer";
 import {Route, Routes} from "react-router-dom";
 import {Home} from "./pages/Home/Home";
 import {Releases} from "./pages/Releases/Releases";
+import {Docs} from "./pages/Docs/Docs";
+import {RoadmapPage} from "./pages/Roadmap/RoadmapPage";
 
 function App() {
     // Apply dark / light theme on app mount
@@ -22,7 +24,9 @@ function App() {
             <NavBar/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
+                <Route path="/docs" element={<Docs/>}/>
                 <Route path="/releases" element={<Releases/>}/>
+                <Route path="/roadmap" element={<RoadmapPage/>}/>
             </Routes>
             <Footer/>
         </div>
