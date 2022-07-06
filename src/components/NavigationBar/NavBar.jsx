@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import ThemeButton from "../UI/ThemeButton";
 import MLALogo from "../../assets/mla_logo.svg";
+import {NavLink} from "react-router-dom";
 
 const NavBar = () => {
     const [atTopPage, setTop] = useState(false);
@@ -35,13 +36,21 @@ const NavBar = () => {
             {/* Navigation bar links */}
             <nav className="flex w-auto h-auto">
                 <ul className="flex w-auto gap-x-10 items-center font-bold">
-                    <li className="flex hover:cursor-pointer space-x-2 place-items-center">
-                        <img src={MLALogo} alt="MLA Logo" width={30}/>
-                        <span> MLA </span>
+                    <li className="flex hover:cursor-pointer">
+                        <NavLink to="/" className="flex space-x-2 place-items-center">
+                            <img src={MLALogo} alt="MLA Logo" width={30}/>
+                            <span> MLA </span>
+                        </NavLink>
                     </li>
-                    <li className="hover:cursor-pointer">Docs</li>
-                    <li className="hover:cursor-pointer">Releases</li>
-                    <li className="hover:cursor-pointer">Roadmap</li>
+                    <li className="hover:cursor-pointer">
+                        <NavLink to="docs">Docs</NavLink>
+                    </li>
+                    <li className="hover:cursor-pointer">
+                        <NavLink to="releases">Releases</NavLink>
+                    </li>
+                    <li className="hover:cursor-pointer">
+                        <NavLink to="roadmap">Roadmap</NavLink>
+                    </li>
                 </ul>
             </nav>
 

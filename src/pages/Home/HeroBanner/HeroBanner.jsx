@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
-import IconButton from "../../components/UI/IconButton";
+import IconButton from "../../../components/UI/IconButton";
 import {MdDownload} from "react-icons/md";
 
 const HeroBanner = (props) => {

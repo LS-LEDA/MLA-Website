@@ -1,4 +1,4 @@
-import {FeatureCard} from "../../components/FeatureCard/FeatureCard";
+import {FeatureCard} from "../../../components/FeatureCard/FeatureCard";
 import {TiDeviceDesktop} from "react-icons/ti";
 import {RiLuggageCartLine, RiPaintBrushFill} from "react-icons/ri";
 import {BsFillShieldLockFill} from "react-icons/bs";
@@ -7,10 +7,10 @@ import {SiDatabricks} from "react-icons/si";
 import {MdDarkMode} from "react-icons/md";
 import {BiCustomize} from "react-icons/bi";
 import {useState} from "react";
-import CrossPlatform from "../../assets/features/cross_platform.svg";
-import Portable from "../../assets/features/portable.svg";
-import PrivateData from "../../assets/features/private_data.svg";
-import BrowseFiles from "../../assets/features/browse_files.svg";
+import CrossPlatform from "../../../assets/features/cross_platform.svg";
+import Portable from "../../../assets/features/portable.svg";
+import PrivateData from "../../../assets/features/private_data.svg";
+import BrowseFiles from "../../../assets/features/browse_files.svg";
 
 const Features = () => {
     const features = [

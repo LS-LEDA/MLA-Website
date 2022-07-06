@@ -2,8 +2,9 @@ import {DownloadButton} from "../DownloadButton/DownloadButton";
 
 const OScard = (props) => {
     return (
-        <div className="flex flex-col border-2 border-indigo-400 rounded-md p-10
-                        hover:bg-primary place-items-center gap-y-5">
+        <div className="flex flex-col border-2 border-primary rounded-md p-10
+                        dark:border-dark_primary
+                        place-items-center gap-y-5">
             <div className="flex flex-auto">
                 { props.os.icon }
             </div>
