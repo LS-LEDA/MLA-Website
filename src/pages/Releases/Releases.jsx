@@ -1,12 +1,9 @@
 import {OScard} from "../../components/OSCard/OScard";
+import {Release} from "../../components/ReleaseCard/Release";
 import {useEffect, useState} from "react";
 import axios from "axios";
 import {BsWindows, BsApple} from "react-icons/bs";
 import {SiLinux} from "react-icons/si";
-import IconButton from "../../components/UI/IconButton";
-import {CgNotes} from "react-icons/cg";
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
 
 const Releases = () => {
     const MLA_RELEASES = "https://api.github.com/repos/LS-LEDA/MLA/releases";
@@ -75,27 +72,6 @@ const Releases = () => {
     }, []);
 
     /**
-     * Release component includes
-     * @param props: release related information
-     * @param index: component key
-     * @returns {JSX.Element}
-     */
-    const releaseComponent = (props, index) => {
-        return (
-            <div className="flex flex-col w-full py-10 space-y-5" key={index}>
-                {/* Release version, name and notes */}
-                <div className="flex w-full justify-between">
-                    <span className="flex text-2xl font-semibold items-center">
-                        {props.name}
-                    </span>
-                    <IconButton download={false} text={"Release notes"} icon={<CgNotes/>}/>
-                </div>
-                {/* Platform releases list */}
-            </div>
-        )
-    }
-
-    /**
      * Renders a list the latest release of all the supported platform with OSCards component
      * @returns {JSX.Element}
      */
@@ -137,8 +113,7 @@ const Releases = () => {
                 {/* Releases List*/}
                 {
                     releases.map( (release, index) => {
-                        {/*return <div className="flex" key={index}> {release.name} </div>*/}
-                        return releaseComponent(release, index)
+                        return <Release release={release} key={index}/>
                     })
                 }
             </section>
