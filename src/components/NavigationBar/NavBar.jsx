@@ -29,10 +29,9 @@ const NavBar = () => {
         <div className={`flex fixed top-0 w-full h-32 justify-between py-10
                         backdrop-filter backdrop-blur-3xl z-50
                         bg-white dark:bg-dark_bg opacity-[0.993]
-                        text-text dark:text-dark_text
-                        px-10 md:px-20 lg:px-32 xl:40 2xl:px-44
-                        border-slate-200 dark:border-slate-50/10
-                        ${atTopPage ? 'border-b-0' : 'border-b'}`}>
+                        text-text dark:text-dark_text border-b
+                        px-10 md:px-20 lg:px-32 xl:40 2xl:px-44 
+                        ${atTopPage ? 'border-transparent' : 'border-slate-200 dark:border-slate-50/10'}`}>
             {/* Navigation bar links */}
             <nav className="flex w-auto h-auto">
                 <ul className="flex w-auto gap-x-10 items-center font-bold">
