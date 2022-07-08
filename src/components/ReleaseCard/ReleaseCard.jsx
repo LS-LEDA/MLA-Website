@@ -72,8 +72,8 @@ const ReleaseCard = (props) => {
                download>
                 <BsBox style={isHovering ? {filter: "drop-shadow(0px 1px 2px rgb(6 182 212))"} : {}}/>
                 <span className="flex-1">{ props.platform.name }</span>
-                <span className="flex-initial w-32 text-gray-500">{ formatBytes(props.platform.size) }</span>
-                <span className="flex-initial w-24 text-gray-500">{ releaseDate.toDateString().split(' ').slice(1).join(' ') }</span>
+                <span className="hidden sm:flex w-32 text-gray-500">{ formatBytes(props.platform.size) }</span>
+                <span className="hidden md:flex w-24 text-gray-500">{ releaseDate.toDateString().split(' ').slice(1).join(' ') }</span>
                 {
                     isHovering &&
                     <motion.div
