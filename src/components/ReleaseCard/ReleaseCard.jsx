@@ -1,11 +1,19 @@
 import {BsBox} from "react-icons/bs";
 import {MdDownload} from "react-icons/md";
-import {useState} from "react";
-import {motion} from "framer-motion";
+import {useEffect, useState} from "react";
+import {motion, useAnimation} from "framer-motion";
+import {useInView} from "react-intersection-observer";
 
-const FeatureCardMotion = {
+// EasIn animation from right to left and incrementing opacity
+const DownloadMotion = {
     visible: {opacity: 1, x: 0, transition:{ ease: "easeIn", duration: 0.25}},
     hidden: {opacity: 0, x: 10}
+};
+
+// EasIn animation from bottom to top and incrementing opacity
+const ReleaseCardMotion = {
+    visible: {opacity: 1, y: 0, transition:{ ease: "easeIn", duration: 0.25}},
+    hidden: {opacity: 0, y: +25}
 };
 
 /**
@@ -19,6 +27,14 @@ const FeatureCardMotion = {
 const ReleaseCard = (props) => {
     const [isHovering, setIsHovering] = useState(false);
     const [releaseDate, setReleaseDate] = useState(new Date(props.release.published_at));
+    const control = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+            control.start("visible");
+        }
+    }, [control, inView]);
 
     const handleMouse = (hoverValue) => {
         setIsHovering(hoverValue);
@@ -43,29 +59,33 @@ const ReleaseCard = (props) => {
     }
 
     return (
-        <li className="flex w-full h-auto rounded-md border border-transparent hover:border-primary hover:dark:border-dark_primary
+        <motion.li className="flex w-full h-auto rounded-md border border-transparent hover:border-primary hover:dark:border-dark_primary
                        space-x-2 items-center p-3 hover:cursor-pointer duration-500"
-            onMouseOver={() => handleMouse(true)}
-            onMouseLeave={() => handleMouse(false)}>
+                    initial="hidden"
+                    animate={control}
+                    ref={ref}
+                    variants={ReleaseCardMotion}
+                    onMouseOver={() => handleMouse(true)}
+                    onMouseLeave={() => handleMouse(false)}>
             <a href={ props.platform.browser_download_url }
                className="flex w-full h-auto space-x-2 items-center justify-center"
                download>
                 <BsBox style={isHovering ? {filter: "drop-shadow(0px 1px 2px rgb(6 182 212))"} : {}}/>
                 <span className="flex-1">{ props.platform.name }</span>
-                <span className="flex-initial w-32 text-gray-500">{ formatBytes(props.platform.size) }</span>
-                <span className="flex-initial w-24 text-gray-500">{ releaseDate.toDateString().split(' ').slice(1).join(' ') }</span>
+                <span className="hidden sm:flex w-32 text-gray-500">{ formatBytes(props.platform.size) }</span>
+                <span className="hidden md:flex w-24 text-gray-500">{ releaseDate.toDateString().split(' ').slice(1).join(' ') }</span>
                 {
                     isHovering &&
                     <motion.div
                         initial="hidden"
                         animate={["hidden", "visible"]}
-                        variants={FeatureCardMotion}
+                        variants={DownloadMotion}
                     >
                         <MdDownload/>
                     </motion.div>
                 }
             </a>
-        </li>
+        </motion.li>
     )
 }
 
