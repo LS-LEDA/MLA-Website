@@ -3,7 +3,8 @@ import {MdDownload} from "react-icons/md";
 import {useState} from "react";
 import {motion} from "framer-motion";
 
-const FeatureCardMotion = {
+// EasIn animation from right to left and incrementing opacity
+const DownloadMotion = {
     visible: {opacity: 1, x: 0, transition:{ ease: "easeIn", duration: 0.25}},
     hidden: {opacity: 0, x: 10}
 };
@@ -59,7 +60,7 @@ const ReleaseCard = (props) => {
                     <motion.div
                         initial="hidden"
                         animate={["hidden", "visible"]}
-                        variants={FeatureCardMotion}
+                        variants={DownloadMotion}
                     >
                         <MdDownload/>
                     </motion.div>
