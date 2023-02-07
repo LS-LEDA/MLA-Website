@@ -1,6 +1,6 @@
-import {HeroBanner} from "./HeroBanner/HeroBanner";
-import {Features} from "./Features/Features";
-import {Roadmap} from "../Roadmap/Roadmap";
+import { HeroBanner } from './HeroBanner/HeroBanner';
+import { Features } from './Features/Features';
+import { Roadmap } from '../Roadmap/Roadmap';
 
 /**
  * Home is the first component that will be presented on
@@ -11,13 +11,13 @@ import {Roadmap} from "../Roadmap/Roadmap";
  * @constructor
  */
 const Home = () => {
-    return (
-        <>
-            <HeroBanner/>
-            <Features/>
-            <Roadmap/>
-        </>
-    )
-}
+  return (
+    <>
+      <HeroBanner />
+      <Features />
+      <Roadmap />
+    </>
+  );
+};
 
 export { Home };
