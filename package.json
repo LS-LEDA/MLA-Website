@@ -2,7 +2,7 @@
     "name": "moodle-learning-analytics",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://ls-leda.github.io/Moodle-Learning-Analytics",
+    "homepage": "https://ls-leda.github.io/MLA-Website",
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
