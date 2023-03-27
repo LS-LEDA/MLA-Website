@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Moodle-Learning-Analytics/static/css/main.1da58aa8.css",
-    "main.js": "/Moodle-Learning-Analytics/static/js/main.cf6c94bc.js",
-    "static/media/la salle.jpg": "/Moodle-Learning-Analytics/static/media/la salle.5facd3054dde0d6a3a0a.jpg",
-    "static/media/cross_platform.svg": "/Moodle-Learning-Analytics/static/media/cross_platform.2de4b0f2486dff73c1d4c1b315848b50.svg",
-    "static/media/browse_files.svg": "/Moodle-Learning-Analytics/static/media/browse_files.0ea62b44b62a35055e379541c1b889f0.svg",
-    "static/media/mla_logo.svg": "/Moodle-Learning-Analytics/static/media/mla_logo.6da52f76708852d616dc66d4dfe7a6c9.svg",
-    "static/media/portable.svg": "/Moodle-Learning-Analytics/static/media/portable.ffd2e51d024a124c845f6581ca67c779.svg",
-    "static/media/private_data.svg": "/Moodle-Learning-Analytics/static/media/private_data.108c59fad44b6507d58b167574edb63e.svg",
-    "index.html": "/Moodle-Learning-Analytics/index.html",
-    "main.1da58aa8.css.map": "/Moodle-Learning-Analytics/static/css/main.1da58aa8.css.map",
-    "main.cf6c94bc.js.map": "/Moodle-Learning-Analytics/static/js/main.cf6c94bc.js.map"
+    "main.css": "/MLA-Website/static/css/main.1da58aa8.css",
+    "main.js": "/MLA-Website/static/js/main.d9d2c054.js",
+    "static/media/la salle.jpg": "/MLA-Website/static/media/la salle.5facd3054dde0d6a3a0a.jpg",
+    "static/media/cross_platform.svg": "/MLA-Website/static/media/cross_platform.2de4b0f2486dff73c1d4c1b315848b50.svg",
+    "static/media/browse_files.svg": "/MLA-Website/static/media/browse_files.0ea62b44b62a35055e379541c1b889f0.svg",
+    "static/media/mla_logo.svg": "/MLA-Website/static/media/mla_logo.6da52f76708852d616dc66d4dfe7a6c9.svg",
+    "static/media/portable.svg": "/MLA-Website/static/media/portable.ffd2e51d024a124c845f6581ca67c779.svg",
+    "static/media/private_data.svg": "/MLA-Website/static/media/private_data.108c59fad44b6507d58b167574edb63e.svg",
+    "index.html": "/MLA-Website/index.html",
+    "main.1da58aa8.css.map": "/MLA-Website/static/css/main.1da58aa8.css.map",
+    "main.d9d2c054.js.map": "/MLA-Website/static/js/main.d9d2c054.js.map"
   },
   "entrypoints": [
     "static/css/main.1da58aa8.css",
-    "static/js/main.cf6c94bc.js"
+    "static/js/main.d9d2c054.js"
   ]
 }
